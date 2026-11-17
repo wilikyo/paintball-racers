@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#10151b">
+  <meta http-equiv="Content-Security-Policy" content="connect-src 'self' blob: data:; object-src 'none'; base-uri 'self'">
+  <title>彩弹飞车 · Paintball Racers</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./ruffle/ruffle.js"></script>
+  <script defer src="./game.js"></script>
+</head>
+<body>
+  <main id="arena" aria-label="彩弹飞车">
+    <div id="stage"></div>
+    <div id="status" role="status"><span>正在加载彩弹飞车…</span></div>
+    <div id="tools"><button id="fullscreen" type="button" aria-label="全屏" title="全屏">⛶</button></div>
+    <aside id="rotate">横屏游玩，双手操作更顺手</aside>
+    <section id="controls" aria-label="赛车触屏操作" hidden>
+      <div id="stick" role="group" aria-label="左摇杆：右推前进，左拉后退，上下调整车头">
+        <i class="north"></i><i class="east"></i><i class="south"></i><i class="west"></i>
+        <div id="knob"></div>
+      </div>
+      <div id="actions">
+        <button data-action="fire" type="button">开炮</button>
+        <button data-action="jump" type="button">跳跃</button>
+        <button data-action="boost" type="button">加速</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
